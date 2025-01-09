@@ -22,7 +22,6 @@ OPTIONS = {
     4 : "EXIT",
  }
 
-pick = 0
 while True: 
 
     for key, value in OPTIONS.items(): 
