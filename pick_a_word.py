@@ -29,3 +29,13 @@ def pick_a_word(file_name):
 
 
 print(pick_a_word('list_of_words.txt'))
+
+
+#2nd solution
+def pick_a_word2(file_name): 
+    with open(f'{file_name}', 'r') as f: 
+        lines = f.readlines()
+        number = random.randint(0, len(lines))
+        return lines[number]
+    
+print("Word: ", pick_a_word2('list_of_words.txt'))
